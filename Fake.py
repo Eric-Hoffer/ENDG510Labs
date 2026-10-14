@@ -3,12 +3,12 @@ import pandas as pd # in case of error, install pnadas using: pip install pandas
 # loop it so there is like 900 fake data
 df = pd.read_csv('data.csv')
 
-i = 12 # only (number) ex:10 reading will be taken. Increase it to higher according to you plan.
+i = 100 # only (number) ex:10 reading will be taken. Increase it to higher according to you plan.
 while i>=0:
     #receive data from client
     new_data = {
-        'Temp': 120000,
-        'Humd': 600000,
+        'Temp': 120,
+        'Humd': 6000,
         'Label': 0
         }
     df = df._append(new_data, ignore_index=True)
